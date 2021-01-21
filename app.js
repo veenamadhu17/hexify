@@ -24,7 +24,7 @@ app.get("/play", indexRouter);
 /**
  * Updates the stats on the splash page
  */
-app.get("/welcome", (req, res) => {
+app.get("/", (req, res) => {
   res.render("splash.ejs", {
     gamesInitialized: gameStatus.gamesInitialized,
     gamesCompleted: gameStatus.gamesCompleted,
