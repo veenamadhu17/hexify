@@ -301,7 +301,7 @@ socket.onmessage = function(event){
         if (playerColor == "Blue") {
             soundLose.play();
         }
-        gridCtx.clear();
+        gridCtx.clearRect();
 
     }
 
@@ -311,7 +311,7 @@ socket.onmessage = function(event){
         if (playerColor == "Red") {
             soundLose.play();
         }
-        gridCtx.clear();
+        gridCtx.clearRect();
 
     }
 
@@ -327,8 +327,7 @@ socket.onmessage = function(event){
 
         console.log("Received game state 7");
         window.alert("Game aborted, click New Game to proceed");
-        var newGridCanvas = gridCanvas.cloneNode(true);
-        gridCanvas.parentNode.replaceChild(newGridCanvas, gridCanvas);
+        gridCtx.clearRect();
 
     }
     
