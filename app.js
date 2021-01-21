@@ -230,14 +230,14 @@ wss.on("connection", function connection(ws) {
       }
     });
 
-    let gameObj = games[con.id];
+    //let gameObj = games[con.id];
 
-    const payLoad = {
-      "gameId": gameObj.gameId, 
-      "method": "closeGame"
-    }
+    //const payLoad = {
+      //"gameId": gameObj.gameId, 
+      //"method": "closeGame"
+    //}
 
-    con.send(JSON.stringify(payLoad));
+    //con.send(JSON.stringify(payLoad));
 
 
   })
