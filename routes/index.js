@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 
 /* GET home page */
-router.get("/welcome", function(req, res) {
+router.get("/", function(req, res) {
   res.sendFile("splash.html", { root: "./public" });
 });
 
