@@ -211,8 +211,9 @@ socket.onmessage = function(event){
         currentGameState = 1
         currentGameId = response.gameId;
         playerColor = response.currentPlayer;
-        //document.getElementById("gameId").innerHTML = "Game ID: " + currentGameId;
-        //document.getElementById("color").innerHTML = "Color: Red";
+        console.log(currentGameId);
+        document.getElementById("gameId").innerHTML = "Game ID: " + currentGameId;
+        document.getElementById("color").innerHTML = "Color: Red";
 
     }
 
@@ -222,8 +223,9 @@ socket.onmessage = function(event){
         currentGameState = 2
         currentGameId = response.gameId;
         playerColor = response.currentPlayer;
-        //document.getElementById("gameId").innerHTML = "Game ID: " + currentGameId;
-        //document.getElementById("color").innerHTML = "Color: Blue";
+        console.log(currentGameId);
+        document.getElementById("gameId").innerHTML = "Game ID: " + currentGameId;
+        document.getElementById("color").innerHTML = "Color: Blue";
 
 
         setInterval(() => {
