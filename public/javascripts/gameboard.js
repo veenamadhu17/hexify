@@ -2,7 +2,7 @@
 /**
  * Assign the sound file to the variable soundLose, so to use it once a player loses the game
  */
-let soundLose = new Audio("lose.mp3");
+let soundLose = new Audio("https://github.com/veenamadhu17/hexify/blob/main/public/Audios/lose.mp3");
 
 
 /**
