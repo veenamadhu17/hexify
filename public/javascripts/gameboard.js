@@ -104,7 +104,7 @@ function GameState(hexGrid, sb){
  * timecount - used to start the timecount
  * 
  */
-socket = new WebSocket("ws://localhost:3000");
+socket = new WebSocket("https://hexifybyvandb.herokuapp.com/");
 
 let hexGrid = new Map();
 let movesMade = [];
