@@ -301,8 +301,7 @@ socket.onmessage = function(event){
         if (playerColor == "Blue") {
             soundLose.play();
         }
-        var newGridCanvas = gridCanvas.cloneNode(true);
-        gridCanvas.parentNode.replaceChild(newGridCanvas, gridCanvas);
+        gridCtx.clear();
 
     }
 
@@ -312,8 +311,7 @@ socket.onmessage = function(event){
         if (playerColor == "Red") {
             soundLose.play();
         }
-        var newGridCanvas = gridCanvas.cloneNode(true);
-        gridCanvas.parentNode.replaceChild(newGridCanvas, gridCanvas);
+        gridCtx.clear();
 
     }
 
