@@ -296,7 +296,7 @@ socket.onmessage = function(event){
     }
 
     if(response.gameState == 5){
-        window.alert("Red won the game, click New Game to play again");
+        window.alert("Red won the game, click on Home to go back to the homepage and start a new game");
         sb.setStatus("Red Won!");
         if (playerColor == "Blue") {
             soundLose.play();
@@ -306,7 +306,7 @@ socket.onmessage = function(event){
     }
 
     if(response.gameState == 6){
-        window.alert("Blue won the game, click New Game to play again");
+        window.alert("Blue won the game, click on Home to go back to the homepage and start a new game");
         sb.setStatus("Blue Won!");
         if (playerColor == "Red") {
             soundLose.play();
@@ -326,7 +326,7 @@ socket.onmessage = function(event){
     if(response == 1001){
 
         console.log("Received game state 7");
-        window.alert("Game aborted, click New Game to proceed");
+        window.alert("Game aborted, click on Home to go back to the homepage and start a new game");
         gridCtx.clearRect();
 
     }
