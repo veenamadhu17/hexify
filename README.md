@@ -1,8 +1,12 @@
+Visit [hexifybyvandb.herokuapp.com/](https://hexifybyvandb.herokuapp.com/)
+
 # HEXify!
 
 ![Board game screenshot](screenshot.PNG)
 
-This game has been created by Bea and Veena as part of our CSE1500 assignment. It is based of the board game Hex where two player places pieces on the board to connect their corresponding colors from one side of the board to the other
+This game has been created by Bea and Veena as part of our CSE1500 assignment. It is based of the board game Hex where two players place pieces on the board to connect their corresponding colors from one side of the board to the other
+
+# Instructions to run in Development Mode
 
 Make sure that you have [Node.js](https://nodejs.org/en/) installed
 
